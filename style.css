@@ -11,7 +11,7 @@ html,body{
 
 .main {
     width: 100%;
-    background: #1e375c;
+    background: #8d1000;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -22,16 +22,13 @@ html,body{
 /*ROSE*/
 .main h1{
     font-family: 'Courier New';
-    font-size: 30px;
-    margin-top: 10px;
+     margin-top: 10px;
     margin-left: 5px;
-    
-    
    
 }
 
 .navbar{ 
-    background-color: #1e375c;
+    background-color: rgb(190, 13, 13);
     width: 100%;
     padding: none;
     display: flex;
@@ -42,19 +39,19 @@ html,body{
     /* margin-right: 25px; */
     align-items: center;
     justify-content: space-between;
-  
-    top: 0;
-   
+     top: 0;
+     font-family: 'Courier New';
 }
-.navbar h1{
-    color: rgb(238, 238, 184);
+.navbar h1{/*ROSE NAV */
+    color: black;
     margin-left: 50px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 27px;
+    font-weight: 800;
+
 }
 ul {
     margin-top: 5px;
-    font-size: 30px;
     font-weight: 600;
     padding: 8px;
     border-radius: 8px;
@@ -72,11 +69,9 @@ ul li {
 
 /* *****************************************************************NAV START******************************************************/
 ul li a {
-    font-size: 20px;
+
     font-weight: bolder;
     font-family: 'Courier New';
-    
-    color:red;
     margin-top: 5px;
     position: relative;
 }
@@ -106,27 +101,28 @@ ul li a:hover {
 /* *****************************************************************NAV END******************************************************/
 .info{
     margin-left: 7%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 .info h1{
-    font-size: 65px;
-    color: rgb(36,32,30);
+    font-size: 60px;
+    color: black;
 }
 .info h2{
     
-    color: rgb(238, 238, 184);
+    color: black;
 }
 
 .info h3{
     font-size: 18px;
-    letter-spacing: 1px;
+    font-family: 'Courier New';
     line-height: 24px;
-    color: rgb(238, 238, 184);
+    color: bisque;
 }
 
 .info span{
-    color: rgb(238, 238, 184);
+    color: rgb(255, 226, 226);
+    font-family: 'Staatliches';
 }
 
 .info a{
@@ -141,50 +137,41 @@ ul li a:hover {
 }
 
 .info a:hover{
-    background:rgb(59, 76, 230)
+    background:rgb(223, 28, 28);
 }
 
 .image{
-    width: 40%;
-    height: 55%;
+    width: 25%;
+    height: 80%;
     position: absolute;
     right: 100px;
-    bottom: 0;
+    bottom: 5px;
 }
+/*samppic3*/
 
 .image img {
-    position: absolute;
-    height: 115%;
-    left: 40%;
-    image-resolution: 100px;
-    border-top-right-radius: 6%;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 5%;
-    transform: translate(-55%);
-    margin-bottom: 15%;
-    bottom: 0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+    
+    
+    width: 170%;
+    height: 90%; 
+    position: relative;
+    right: 70%; 
+    bottom: 5%; 
+    filter: brightness(.8) contrast(2);
+
+
 }
-
-.image:hover img {
-    transform: translate(-50%, -10%) scale(1.1);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.2) contrast(1.1);
-    border-radius: 18%;
-}
-
-
 .icons a {
     text-decoration: none;
-    color: #000;
-   
+    color: black;
+
     
 }
 
 
 .icons ion-icon {
     margin-left: 7%;
-    color: #000;
+    color: bisque;
     margin-right: -60px;
     font-size: 40px;
     transition: 0.4s ease; 
@@ -196,7 +183,7 @@ ul li a:hover {
 
         transform: scale(1.2); /* Scale effect on hover */
   
-    box-shadow: 0 0 2px rgb(59, 76, 230), 0 0 10px rgb(59, 76, 230), 0 0 10px rgb(59, 76, 230);
+    box-shadow: 0 0 2px #06d406, 0 0 10px #e73838, 0 0 10px #73ec10;
 }
 
 
@@ -207,7 +194,7 @@ ul li a:hover {
     scroll-margin-block-start: 70px;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #1e375c, #212833);
+    background: #720d00;
     padding-top: 1px; 
     background-size: cover; 
    
@@ -231,11 +218,16 @@ margin-right: 0;
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 160%; /* Adjust as needed */
+    height: 90%; /* Use auto to maintain aspect ratio */
+    position: relative; /* Change to relative if needed */
+    
+    right: 70%; /* Use percentage for responsiveness */
+    bottom: 30%; /* Use percentage for responsiveness */
+    filter: brightness(1) contrast(1.5);
     border-radius: 20%;
     border-bottom-left-radius:40%;
-    margin-bottom: 50%;
-    height:70%;
+    
 }
 
 .about-col-2 {
@@ -252,9 +244,9 @@ margin-right: 0;
 }
 
 .sub {
-    color: rgb(238, 238, 184);;
+    color: bisque;
     font-size: 18px;
-    font-family: 'Courier New';
+    font-family:  courier new;
     font-weight: 500;
     margin-top: 5px;
 }
@@ -267,13 +259,14 @@ margin-right: 0;
    
 }
 
+
 .education-list {
   
-    
+    color: antiquewhite;
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: linear-gradient(135deg, #1e375c, #212833);
+    background: #720d00;
 
 }
 
@@ -284,7 +277,7 @@ margin-right: 0;
     width: 100px; 
     
     text-align: center; 
-    background-color: rgb(59, 76, 230); 
+    background-color: #8d1000; 
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
@@ -295,7 +288,7 @@ margin-right: 0;
     width: 300px;
     padding: 4%;
     text-align: center; 
-    background-color: rgb(59, 76, 230); 
+    background-color: #8d1000; 
     border-radius: 8px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
@@ -308,7 +301,7 @@ margin-right: 0;
     width: 100px; 
    
     text-align: center; 
-    background-color: rgb(59, 76, 230); 
+    background-color: #8d1000; 
     border-radius: 8px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -319,7 +312,7 @@ margin-right: 0;
     width: 300px; 
     padding: 4%;
     text-align: center; 
-    background-color: rgb(59, 76, 230); 
+    background-color: #8d1000; 
     border-radius: 8px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
@@ -330,7 +323,7 @@ margin-right: 0;
     width: 100px; 
     
     text-align: center; 
-    background-color: rgb(59, 76, 230); 
+    background-color:#8d1000; 
     border-radius: 8px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -341,7 +334,7 @@ margin-right: 0;
     width: 300px; 
     padding: 4%; 
     text-align: center; 
-    background: linear-gradient(to right, rgb(59, 76, 230), rgb(68, 50, 235)) ;/*  background color smallbox */
+    background: #8d1000 ;/*  background color smallbox */
     border-radius: 8px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
@@ -350,7 +343,7 @@ margin-right: 0;
     font-family: 'Courier New';
     font-weight: bold;
     margin-bottom: 10px;
-    background: linear-gradient(to right, rgb(59, 76, 230), rgb(68, 50, 235));
+     background:   #8d1000;
     padding: 10px;
     border-radius: 10px;
     
@@ -360,7 +353,8 @@ margin-right: 0;
 
 
 .education-list li:hover {
-    background: #f0f0f0;
+    background: #e73838; 
+  
 }
 
 .attainment{
@@ -381,7 +375,7 @@ margin-right: 0;
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #1e375c, #212833);
+    background: #720d00;
     padding:20px 0;
     font-family: 'Courier New';
     font-weight: 600;
@@ -459,7 +453,7 @@ ul li a:hover {
     font-family: 'Courier New';
     font-weight: bolder;
     margin-bottom: 10px;
-    color: #3b4ce6; 
+    color: bisque; 
     text-transform: uppercase; 
     letter-spacing: 0.1px;
     position: relative;
@@ -469,7 +463,7 @@ ul li a:hover {
     content: '';
     width: 170px;
     height: 4px;
-    background: #3b4ce6; 
+    background: black; 
     display: block;
     margin: 5px auto 0;
 }
@@ -477,7 +471,7 @@ ul li a:hover {
 .section-subtitle { 
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: bisque;
     margin-bottom: 20px;
 }
 
@@ -492,7 +486,7 @@ ul li a:hover {
 }
 
 .service-card {
-    background: linear-gradient(to right, rgb(59, 76, 230), rgb(68, 50, 235)) ;/* smallbox background color  */
+    background: rgb(190, 13, 13);/* smallbox background color  */
     padding: 3px; 
     border-radius: 15px;
     flex: 1 1 calc(33.333% - 20px); 
@@ -503,7 +497,7 @@ ul li a:hover {
 }
 
 .service-card:hover {
-    background: #2438f1; 
+    background: rgb(223, 28, 28); 
     transform: scale(1.05); /* Scale effect on hover */
 }
 
@@ -521,12 +515,12 @@ ul li a:hover {
 .service-title {
     font-size: 26px; 
     margin-bottom: 10px;
-    color: black; 
+    color: bisque; 
 }
 
 .service-description {
     font-size: 18px; 
-    color: black; 
+    color: bisque; 
     opacity: 0.9; 
 }
 
@@ -538,7 +532,7 @@ ul li a:hover {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #1e375c, #212833);
+    background: #720d00;
     padding: 50px 0;
 }
 
@@ -549,10 +543,17 @@ ul li a:hover {
     padding: 0 20px;
     margin-top: 5%;
     margin-bottom: 15%;
-    background: linear-gradient(to right, rgb(59, 76, 230), rgb(68, 50, 235)) ;/*  background color */
+    background: rgb(190, 13, 13);/*  background color */
     padding: 40px; 
     border-radius: 10px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+.contact .container:hover {
+    background: rgb(223, 28, 28); 
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 .contact .title {
@@ -560,7 +561,7 @@ ul li a:hover {
     font-family: 'Courier New';
     font-weight: bolder;
     margin-bottom: 20px;
-    color: black;
+    color: bisque;
     text-transform: uppercase; 
     letter-spacing: 2px; 
     position: relative;
@@ -569,7 +570,7 @@ ul li a:hover {
     
 
 .contact .sub {
-    color: black; 
+    color: bisque;
     font-size: 20px; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: 550;
@@ -581,7 +582,7 @@ ul li a:hover {
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: black;
+    color: bisque;
 }
 
 .contact-info p {
@@ -598,7 +599,7 @@ ul li a:hover {
 
 .contact-icons a {
     text-decoration: none;
-    color: #000;
+    color: bisque;
     margin: 0 10px;
     transition: transform 0.3s ease; /* Smooth scaling effect */
 }
