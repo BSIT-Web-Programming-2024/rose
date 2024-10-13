@@ -165,8 +165,7 @@ ul li a:hover {
     right: 70%;
     bottom: 5%;
     filter: brightness(.8) contrast(2);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), 
-                -5px -5px 15px rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 5));
 
     transition: transform 0.3s ease, filter 0.3s ease;        
     border-radius: 3rem;
