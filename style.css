@@ -192,11 +192,11 @@ ul li a:hover {
 }
 
 .icons ion-icon:hover {
-    color: black;
+    color: rgb(25, 24, 27);
 
         transform: scale(1.2); 
     filter: drop-shadow(black)
-  /*  box-shadow: 0 0 2px #fa2407, 0 0 10px #e73838, 0 0 10px #ec1010;*/
+   /* box-shadow: 0 0 2px #fa2407, 0 0 10px #e73838, 0 0 10px #ec1010;*/
 }
 
 
@@ -640,8 +640,9 @@ ul li a:hover {
 }
 
 .contact-icons ion-icon:hover {
-    color: rgb(222, 223, 236);
-    box-shadow: 0 0 10px rgb(201, 205, 245), 0 0 20px rgb(194, 198, 236), 0 0 30px rgb(198, 202, 240);
+    color: black;
+    filter: drop-shadow(black);
+   /* box-shadow: 0 0 10px rgb(201, 205, 245), 0 0 20px rgb(194, 198, 236), 0 0 30px rgb(198, 202, 240);*/
 }
 
 /* *****************************************************************CONTACT END******************************************************/
