@@ -192,7 +192,7 @@ ul li a:hover {
 }
 
 .icons ion-icon:hover {
-    color: rgb(238, 238, 184);
+    color: black;
 
         transform: scale(1.2); 
     filter: drop-shadow(black)
