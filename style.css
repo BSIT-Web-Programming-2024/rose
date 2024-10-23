@@ -153,25 +153,20 @@ ul li a:hover {
 }
 /*samppic3*/
 
+.image {
+    perspective: 1000px; /*  3D */
+}
+
 .image img {
-    max-width: 100%; 
-    height: auto;    
-    position: relative;
-    margin: 0 auto;  
-    filter: brightness(0.8) contrast(2);
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
-    transition: transform 0.3s ease, filter 0.3s ease;        
-    border-radius: 3rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
 .image img:hover {
-    transform: scale(1.05); /* Scale effect of the hover */
-    filter: brightness(1) contrast(1); 
+    transform: rotateY(180deg); /* Flip effect */
 }
 
-.image img {
-    cursor: pointer; 
-}
+
 
 
 .icons a {
