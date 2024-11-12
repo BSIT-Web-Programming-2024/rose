@@ -16,16 +16,18 @@
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
+            
         </div>
         <div class="info">
-            <h2>Hi, I'm <span>ROSE</span>.</h2>
-            <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
+            <h2>Hi, I'm <span id="typed-text"></span><span id="cursor">|</span></h2>
+
+           
             <h3>Web designer and developer from Baguio City, Philippines. 
                <br> I create  websites to do businesses do better <br> online.</h3>
                 <a href="#">Hire Me</a>
         </div>
-        <div class="image" >
-            <img src="samppic3.png" class="girl" data-aos="fade-right" >
+        <div class="image"  data-aos="fade-right " >
+            <img src="samppic3.png" class="girl" >
         </div>
         <div class="icons">
             <a href="https://www.facebook.com/rose.lorenzo.756412?mibextid=ZbWKwL "  target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -113,6 +115,31 @@
             </div>
         </div>
     </div>
+    <script>
+
+        function typeWriter(elementId, text, speed) {
+            let i = 0;
+            const element = document.getElementById(elementId);
+            const typingInterval = setInterval(function() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typingInterval); 
+                    setTimeout(function() {
+                        element.innerHTML = "";
+                        typeWriter(elementId, text, speed); 
+                    }, 1000); 
+                }
+            }, speed);
+        }
+    
+        window.onload = function() {
+            typeWriter("typed-text", "ROSE WEB DEVELOPER", 150);  
+        };
+    </script>
+    
+    
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
