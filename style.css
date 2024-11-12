@@ -99,16 +99,27 @@ ul li a:hover {
     transition: color 0.5s ease-in-out;
 }
 /* *****************************************************************NAV END******************************************************/
+#cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+   
+    margin-left: 2px;
+    animation: blink 0.7s infinite ;
+}
+
+/* Create a blinking cursor effect */
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
 .info{
     margin-left: 7%;
     margin-top: 10%;
 }
 
-.info h1 {
-    font-size: 60px;
-    color: black;
-    animation: bounce 1.8s infinite; 
-}
 
 
 
@@ -118,10 +129,12 @@ ul li a:hover {
 }
 
 .info h3{
-    font-size: 18px;
-    font-family: 'Courier New';
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 24px;
     color: black;
+    font-weight:900;
 }
 
 .info span{
@@ -150,20 +163,21 @@ ul li a:hover {
     position: absolute;
     right: 100px;
     bottom: 5px;
+    
 }
 /*samppic3*/
 
 .image {
-    perspective: 1000px; /*  3D */
+    perspective: 1000px; /* Enables 3D perspective */
 }
 
 .image img {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+    transition: transform 0.3s;
+    
 }
 
 .image img:hover {
-    transform: rotateY(180deg); /* Flip effect */
+    transform: rotateY(-180deg); /* Flip left effect */
 }
 
 
