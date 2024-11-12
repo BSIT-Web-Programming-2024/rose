@@ -157,28 +157,60 @@ ul li a:hover {
     background:rgb(223, 28, 28);
 }
 
-.image{
-    width: 25%;
-    height: 90%;
-    position: absolute;
-    right: 100px;
-    bottom: 5px;
-    
-}
+
 /*samppic3*/
 
+/* Image Container */
 .image {
-    perspective: 1000px; /* Enables 3D perspective */
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    z-index: 10; /* Ensure the image appears above other content */
 }
 
+/* Image Styling */
 .image img {
-    transition: transform 0.3s;
-    
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Limit image size */
+    border-radius: 50%; /* Circular image border */
+    border: 8px solid transparent; /* Border as transparent by default */
+    background: linear-gradient(45deg, #ff6347, #ff1493, #ff6347); /* Gradient background on the border */
+    background-clip: padding-box; /* Ensure the border only clips the padding */
+    box-sizing: border-box; /* Include border in the element's total size */
+    transition: transform 0.5s ease-in-out, 
+                box-shadow 0.4s ease-in-out, 
+                border-color 0.3s ease-in-out, 
+                filter 0.3s ease-in-out; /* Smooth transitions */
 }
 
+/* Hover Effect - Eye-Catching Animations */
 .image img:hover {
-    transform: rotateY(-180deg); /* Flip left effect */
+    transform: scale(1.15); /* Zoom the image */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Strong shadow for emphasis */
+    border: 8px solid transparent; /* Keep border visible */
+    background: linear-gradient(45deg, #ff6347, #ff1414, #ff6347); /* Vibrant gradient border on hover */
+    filter: brightness(1) saturate(1); /* Increase brightness and saturation */
+    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.6); /* Glowing shadow effect */
+    transition: all 0.3s ease-out; /* Smooth transitions for hover */
 }
+
+
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .image {
+        right: 10%; /* Slightly more space on the right */
+        bottom: 15%; /* Move it up slightly from the bottom */
+        max-width: 80%; /* Adjust image width on smaller screens */
+    }
+
+    .image img {
+        max-width: 100%; /* Allow the image to scale down on small screens */
+        border-radius: 50%; /* Maintain circular border on mobile */
+    }
+}
+
 
 
 
@@ -240,16 +272,18 @@ margin-right: 0;
 }
 /*pic2*/
 .about-col-1 img {
-    width: 120%; 
-    height: auto;
-    position: relative; 
+    width: 95%;      
+    height: 100%;       
+    position: relative;  
     
+    filter: brightness(1) contrast(1.5);  
     
-    filter: brightness(1) contrast(1.5);
-    border-radius: 20%; 
-    border-bottom-left-radius: 40%; 
-    display: block; 
-    max-width: 100%; 
+    border-radius: 10px;
+    border-bottom-left-radius: 20%; 
+    
+    display: block;       
+    max-width: 100%;        
+    
 }
 
 
